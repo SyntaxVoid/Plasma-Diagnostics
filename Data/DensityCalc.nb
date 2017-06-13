@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      2080,         78]
-NotebookOptionsPosition[      1768,         62]
-NotebookOutlinePosition[      2111,         77]
-CellTagsIndexPosition[      2068,         74]
+NotebookDataLength[      2507,         86]
+NotebookOptionsPosition[      2162,         69]
+NotebookOutlinePosition[      2538,         85]
+CellTagsIndexPosition[      2495,         82]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,46 +22,54 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"kTev", "=", "1.85"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
+  RowBox[{"IPSat", " ", "=", " ", 
+   RowBox[{"6.37", "*", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "6"}]]}]}], ";", 
+  RowBox[{"q", "=", 
+   RowBox[{"1.6", "*", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "19"}]]}]}], ";", 
   RowBox[{"As", "=", 
-   RowBox[{"\[Pi]", 
+   RowBox[{"2", "*", " ", "\[Pi]", " ", 
     SuperscriptBox[
      RowBox[{"(", 
-      RowBox[{"1.0", "*", 
-       SuperscriptBox["10", 
-        RowBox[{"-", "3"}]]}], ")"}], "2"]}]}], ";"}], "\[IndentingNewLine]", 
+      FractionBox[
+       RowBox[{"1.0", "*", 
+        SuperscriptBox["10", 
+         RowBox[{"-", "3"}]]}], "2"], ")"}], "2"]}]}], ";", 
+  RowBox[{"mAr", " ", "=", " ", 
+   RowBox[{"6.63", "*", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "26"}]]}]}], ";", " ", 
+  RowBox[{"ev2J", " ", "=", " ", 
+   RowBox[{"1.6", "*", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "19"}]]}]}], ";", " ", 
+  RowBox[{"kTeV", "=", "1.85"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"ne", " ", "=", " ", 
   RowBox[{
-   FractionBox[
-    RowBox[{"6.37", "*", 
-     SuperscriptBox["10", 
-      RowBox[{"-", "6"}]]}], 
-    RowBox[{"1.6", "*", 
-     SuperscriptBox["10", 
-      RowBox[{"-", "19"}]], "*", "As", "*", 
+   FractionBox["IPSat", 
+    RowBox[{"q", " ", "As", " ", 
      SuperscriptBox["\[ExponentialE]", 
       RowBox[{
        RowBox[{"-", "1"}], "/", "2"}]]}]], 
    SqrtBox[
-    FractionBox[
-     RowBox[{"6.63", "*", 
-      SuperscriptBox["10", 
-       RowBox[{"-", "26"}]]}], 
-     RowBox[{"(", 
-      FractionBox["kTev", 
-       RowBox[{"6.24", "*", 
-        SuperscriptBox["10", "18"]}]], ")"}]]]}]}]}], "Input",
- CellChangeTimes->{{3.7044797531967893`*^9, 3.7044798069489784`*^9}, {
-  3.7044799357670527`*^9, 3.7044800211581583`*^9}}],
+    FractionBox["mAr", 
+     RowBox[{"kTeV", "*", "ev2J"}]]]}]}]}], "Input",
+ CellChangeTimes->{{3.706326068684557*^9, 3.7063261713631973`*^9}, 
+   3.7063262886479216`*^9, {3.706326323079911*^9, 3.706326333587762*^9}, {
+   3.706326407379421*^9, 3.7063264192492237`*^9}}],
 
-Cell[BoxData["9.8805248046969`*^15"], "Output",
- CellChangeTimes->{
-  3.704479951128999*^9, {3.7044800091679554`*^9, 3.704480021642783*^9}}]
+Cell[BoxData["1.9776877445018544`*^16"], "Output",
+ CellChangeTimes->{{3.7063261725662875`*^9, 3.706326182561182*^9}, 
+   3.706326289768923*^9, {3.7063263253865104`*^9, 3.7063263353329597`*^9}, {
+   3.7063264018221827`*^9, 3.706326420523529*^9}, 3.7063318696420407`*^9}]
 }, Open  ]]
 },
-WindowSize->{759, 745},
-WindowMargins->{{Automatic, 296}, {24, Automatic}},
+WindowSize->{1504, 745},
+WindowMargins->{{Automatic, -279}, {181, Automatic}},
+Magnification:>1.3 Inherited,
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -77,12 +85,10 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 1029, 33, 116, "Input"],
-Cell[1612, 57, 140, 2, 30, "Output"]
+Cell[580, 22, 1293, 39, 144, "Input"],
+Cell[1876, 63, 270, 3, 39, "Output"]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
